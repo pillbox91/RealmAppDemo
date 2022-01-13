@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1D361E28361FA17256DAB5C0 /* Pods_RealmAppDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1ED5DD9270EFAED725B95EF4 /* Pods_RealmAppDemo.framework */; };
+		322E329327902B74006E2FED /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = 322E329227902B74006E2FED /* Task.swift */; };
+		322E329527902BBA006E2FED /* StorageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 322E329427902BBA006E2FED /* StorageManager.swift */; };
+		322E329727902EBA006E2FED /* Extension + UITableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 322E329627902EBA006E2FED /* Extension + UITableViewCell.swift */; };
 		32CBF1B8278D7B5E00187D4B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32CBF1B7278D7B5E00187D4B /* AppDelegate.swift */; };
 		32CBF1BF278D7B5E00187D4B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 32CBF1BD278D7B5E00187D4B /* Main.storyboard */; };
 		32CBF1C1278D7B6800187D4B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 32CBF1C0278D7B6800187D4B /* Assets.xcassets */; };
@@ -17,6 +21,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1C1BD8E02ACE2EB3B8490C19 /* Pods-RealmAppDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RealmAppDemo.release.xcconfig"; path = "Target Support Files/Pods-RealmAppDemo/Pods-RealmAppDemo.release.xcconfig"; sourceTree = "<group>"; };
+		1ED5DD9270EFAED725B95EF4 /* Pods_RealmAppDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RealmAppDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		322E329227902B74006E2FED /* Task.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
+		322E329427902BBA006E2FED /* StorageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageManager.swift; sourceTree = "<group>"; };
+		322E329627902EBA006E2FED /* Extension + UITableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension + UITableViewCell.swift"; sourceTree = "<group>"; };
 		32CBF1B4278D7B5E00187D4B /* RealmAppDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RealmAppDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		32CBF1B7278D7B5E00187D4B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		32CBF1BE278D7B5E00187D4B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -26,6 +35,7 @@
 		32CBF1CB278D7BEA00187D4B /* TaskListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskListViewController.swift; sourceTree = "<group>"; };
 		32CBF1CD278D7C0200187D4B /* TasksViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TasksViewController.swift; sourceTree = "<group>"; };
 		32CBF1CF278D7C2900187D4B /* AlertController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertController.swift; sourceTree = "<group>"; };
+		41BF598E0DB3A7963D2BCA26 /* Pods-RealmAppDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RealmAppDemo.debug.xcconfig"; path = "Target Support Files/Pods-RealmAppDemo/Pods-RealmAppDemo.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,17 +43,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1D361E28361FA17256DAB5C0 /* Pods_RealmAppDemo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		135A7CBB7411A381596D7EA3 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				41BF598E0DB3A7963D2BCA26 /* Pods-RealmAppDemo.debug.xcconfig */,
+				1C1BD8E02ACE2EB3B8490C19 /* Pods-RealmAppDemo.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		28A3AE471D20651CB3AA689E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1ED5DD9270EFAED725B95EF4 /* Pods_RealmAppDemo.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		32CBF1AB278D7B5E00187D4B = {
 			isa = PBXGroup;
 			children = (
 				32CBF1B6278D7B5E00187D4B /* RealmAppDemo */,
 				32CBF1B5278D7B5E00187D4B /* Products */,
+				135A7CBB7411A381596D7EA3 /* Pods */,
+				28A3AE471D20651CB3AA689E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -60,8 +90,11 @@
 			children = (
 				32CBF1B7278D7B5E00187D4B /* AppDelegate.swift */,
 				32CBF1CB278D7BEA00187D4B /* TaskListViewController.swift */,
+				322E329227902B74006E2FED /* Task.swift */,
 				32CBF1CD278D7C0200187D4B /* TasksViewController.swift */,
 				32CBF1CF278D7C2900187D4B /* AlertController.swift */,
+				322E329627902EBA006E2FED /* Extension + UITableViewCell.swift */,
+				322E329427902BBA006E2FED /* StorageManager.swift */,
 				32CBF1BD278D7B5E00187D4B /* Main.storyboard */,
 				32CBF1C2278D7B6800187D4B /* LaunchScreen.storyboard */,
 				32CBF1C0278D7B6800187D4B /* Assets.xcassets */,
@@ -77,9 +110,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 32CBF1C8278D7B6800187D4B /* Build configuration list for PBXNativeTarget "RealmAppDemo" */;
 			buildPhases = (
+				90E68F3708472F2A546AD5F3 /* [CP] Check Pods Manifest.lock */,
 				32CBF1B0278D7B5E00187D4B /* Sources */,
 				32CBF1B1278D7B5E00187D4B /* Frameworks */,
 				32CBF1B2278D7B5E00187D4B /* Resources */,
+				10647FD5274F0C1BB717AC46 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -136,6 +171,48 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		10647FD5274F0C1BB717AC46 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RealmAppDemo/Pods-RealmAppDemo-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RealmAppDemo/Pods-RealmAppDemo-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-RealmAppDemo/Pods-RealmAppDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		90E68F3708472F2A546AD5F3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RealmAppDemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		32CBF1B0278D7B5E00187D4B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -143,6 +220,9 @@
 			files = (
 				32CBF1B8278D7B5E00187D4B /* AppDelegate.swift in Sources */,
 				32CBF1D0278D7C2900187D4B /* AlertController.swift in Sources */,
+				322E329327902B74006E2FED /* Task.swift in Sources */,
+				322E329527902BBA006E2FED /* StorageManager.swift in Sources */,
+				322E329727902EBA006E2FED /* Extension + UITableViewCell.swift in Sources */,
 				32CBF1CE278D7C0200187D4B /* TasksViewController.swift in Sources */,
 				32CBF1CC278D7BEA00187D4B /* TaskListViewController.swift in Sources */,
 			);
@@ -288,6 +368,7 @@
 		};
 		32CBF1C9278D7B6800187D4B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 41BF598E0DB3A7963D2BCA26 /* Pods-RealmAppDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -299,6 +380,7 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeRight UIInterfaceOrientationLandscapeLeft";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -316,6 +398,7 @@
 		};
 		32CBF1CA278D7B6800187D4B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1C1BD8E02ACE2EB3B8490C19 /* Pods-RealmAppDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -327,6 +410,7 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeRight UIInterfaceOrientationLandscapeLeft";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (

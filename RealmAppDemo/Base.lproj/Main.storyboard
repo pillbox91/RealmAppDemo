@@ -9,7 +9,7 @@
         <!--Task Lists-->
         <scene sceneID="bBF-tP-dXm">
             <objects>
-                <tableViewController id="4le-5V-2mV" customClass="TaskListViewController" customModule="RealmApp" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController id="4le-5V-2mV" customClass="TaskListViewController" customModule="RealmAppDemo" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="MIz-br-R3V">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -74,7 +74,7 @@
         <!--Tasks View Controller-->
         <scene sceneID="T7u-po-DSs">
             <objects>
-                <tableViewController id="ygD-iN-HYb" customClass="TasksViewController" customModule="RealmApp" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController id="ygD-iN-HYb" customClass="TasksViewController" customModule="RealmAppDemo" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" id="7lo-Wf-umw">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
